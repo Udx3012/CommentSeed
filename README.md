@@ -2,9 +2,9 @@
 
 > AI-powered social comment generator for short-form video content.
 
-CommentSeed generates realistic, human-sounding engagement comments for TikTok, Instagram Reels, and YouTube Shorts. Given a content description or video URL, it produces a batch of varied comments across five voice archetypes — styled to match real platform comment behavior, not generic AI output.
+CommentSeed generates realistic, human-sounding engagement comments for TikTok, Instagram Reels, and YouTube Shorts. Given a content description or video URL, it produces a batch of varied comments across five voice archetypes, styled to match real platform comment behavior, not generic AI output.
 
-Built as a portfolio demo to demonstrate applied AI content generation and tone control.
+Built as a demo to demonstrate applied AI content generation and tone control.
 
 ---
 
