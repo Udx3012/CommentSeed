@@ -23,7 +23,7 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/Udx3012/CommentSeed"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-neutral-400 hover:text-white flex items-center gap-1.5 bg-neutral-900 hover:bg-neutral-800/80 border border-neutral-850 rounded-md px-3 py-1.5 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 active:scale-[0.98] outline-none focus-visible:ring-1 focus-visible:ring-neutral-400 focus-visible:ring-offset-1 focus-visible:ring-offset-black"
