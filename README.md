@@ -1,26 +1,24 @@
-# CommentSeed
+# CommentSeed → Creator Intelligence
 
-> AI-powered social comment generator for short-form video content.
-
-CommentSeed generates realistic, human-sounding engagement comments for TikTok, Instagram Reels, and YouTube Shorts. Given a content description or video URL, it produces a batch of varied comments across five voice archetypes, styled to match real platform comment behavior, not generic AI output.
-
-Built as a demo to demonstrate applied AI content generation and tone control.
+> **v1 (CommentSeed) is stable and tagged.** Active development has moved to **v2 — Creator Intelligence**.
 
 ---
 
-## Features
+## CommentSeed (v1) — Stable
+
+AI-powered social comment generator for short-form video content. Given a content description or video URL, it produces a batch of varied comments across five voice archetypes, styled to match real platform comment behavior.
+
+### Features
 
 - **5 comment archetypes** — Hype 🔥, Witty, Curious, Skeptical, Wholesome
 - **Parallel generation** — fan-out LLM calls per archetype for fast batch results
-- **Realism post-processing** — enforces lowercase, natural imperfections, length variation, and strips AI-sounding openers
+- **Realism post-processing** — enforces lowercase, natural imperfections, length variation, strips AI-sounding openers
 - **Per-comment regeneration** — re-roll any individual comment without redoing the whole batch
 - **Copy to clipboard** — per-comment and copy-all options
 - **Rate limiting** — 10 requests/minute per IP (in-memory token bucket)
 - **Stateless** — no database, no auth, all session state lives on the client
 
----
-
-## Tech Stack
+### Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -33,24 +31,38 @@ Built as a demo to demonstrate applied AI content generation and tone control.
 
 ---
 
-## Getting Started
+## Creator Intelligence (v2) — In Development
+
+Creator Intelligence is the evolution of CommentSeed into a full-spectrum AI platform for content creators. Beyond comment generation, it adds caption writing, hook generation, content briefs, and platform-native tone calibration across TikTok, YouTube, Instagram, and X.
+
+> See [PRD-CreatorIntelligence.md](./PRD-CreatorIntelligence.md) for the full v2 requirements and roadmap.
+
+**Development branch:** `v2/creator-intelligence`
+
+---
+
+## Getting Started (v1)
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/CommentSeed.git
+git clone https://github.com/Udx3012/CommentSeed.git
 cd CommentSeed
 ```
 
-### 2. Install dependencies
+### 2. Checkout the stable v1 tag
+
+```bash
+git checkout v1.0.0
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Set up environment variables
-
-Copy the example env file and add your Groq API key:
+### 4. Set up environment variables
 
 ```bash
 cp .env.example .env
@@ -64,7 +76,7 @@ GROQ_API_KEY=your_groq_api_key_here
 
 Get a free API key at [console.groq.com/keys](https://console.groq.com/keys).
 
-### 4. Run the development server
+### 5. Run the development server
 
 ```bash
 npm run dev
@@ -104,6 +116,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 |---|---|---|
 | `GROQ_API_KEY` | ✅ Yes | Your Groq API key |
 | `GROQ_MODEL` | No | Override the default model (default: `llama-3.3-70b-versatile`) |
+
+---
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md).
 
 ---
 
